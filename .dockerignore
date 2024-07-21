@@ -1,0 +1,8 @@
+# Ignoruj foldery
+HRF-database/
+logs/
+
+# Ignoruj plik README.md
+README.md
+VesselsDetection.html
+VesselsDetection.ipynb

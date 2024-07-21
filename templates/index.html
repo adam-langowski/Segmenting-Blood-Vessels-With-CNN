@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retinal Blood Vessels Segmentation</title>
+</head>
+<body>
+    <h1>Upload an image for segmentation</h1>
+    <form action="/segment" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Segment">
+    </form>
+    {% if segmented_image %}
+        <h2>Segmented Image</h2>
+        <img src="{{ segmented_image }}" alt="Segmented Image">
+    {% endif %}
+</body>
+</html>
