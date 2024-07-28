@@ -1,6 +1,11 @@
 # Segmenting Retinal Blood Vessels with CNN
 
 *Created for Informatics in Medicine classes*
+
+Screen from web app created in Flask (using trained CNN models):
+
+![image](https://github.com/user-attachments/assets/4c5f8669-c431-4222-b9be-e6048a767987)
+![image](https://github.com/user-attachments/assets/177ae2e3-fa70-47b1-851f-7cf8fe04e742)
   
 Cel: Przekształcenie obrazu oryginalnego w obraz podobny do maski eksperta, eksponując jedynie naczynia krwionośne:
 
@@ -23,7 +28,7 @@ Na tym etapie, poprzedzającym segmentację, przykładowy obraz wygląda następ
 
 ![Preprocessed Image](https://github.com/user-attachments/assets/7197eee6-be71-4593-9ca5-53e717cdc85f)
 
-Segmentacja poprzez progowanie, z ustawianym ręcznie (eksperymentalnie) progiem. Rezultat dla przykładowego obrazu:
+Segmentacja poprzez progowanie z ustawianym ręcznie (eksperymentalnie) progiem. Rezultat dla przykładowego obrazu:
 
 ![Thresholding Result](https://github.com/user-attachments/assets/da7034c8-dc8c-4aff-9da2-ddf8ad5935c1)
 
@@ -116,4 +121,4 @@ Wyniki klasyfikacji (5 zdjęć):
 
 ![Augmented Results](https://github.com/user-attachments/assets/97421015-07fd-4739-86f8-0366cdec1fbd)
 
-Po treningu na bazie DRIVE, model nauczył się eliminować obwód oka z klasy naczyń, jednak zdolności identyfikacji cieńszych naczyń zostały ograniczone. Zaimplementowana architektura znacznie lepiej spisuje się na bazie HRF, gdzie model osiągnął 96% dokładności. Wyniki uzyskane dla obu baz danych z obrazami podkreślają kluczową rolę bogatego i poprawnego dataset'u w tworzeniu efektywnych modeli uczenia maszynowego.
+Po treningu na bazie DRIVE model nauczył się eliminować obwód oka z klasy naczyń, jednak zdolności identyfikacji cieńszych naczyń pozostały ograniczone. Zaimplementowana architektura znacznie lepiej spisuje się na bazie HRF, gdzie model osiągnął 96% dokładności. Wyniki uzyskane dla obu baz danych z obrazami podkreślają kluczową rolę bogatego i poprawnego dataset'u w tworzeniu efektywnych modeli uczenia maszynowego.
