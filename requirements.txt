@@ -3,7 +3,6 @@ Werkzeug==2.2.3
 numpy
 opencv-python-headless==4.9.0.80
 tensorflow==2.16.1
-pillow==9.4.0
 flask-socketio
 python-socketio
-pillow
+Pillow
