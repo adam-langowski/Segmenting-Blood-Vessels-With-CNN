@@ -2,6 +2,10 @@
 
 *Created for Informatics in Medicine classes*
 
+**Check out the app in Streamlit: https://segmenting-retinal-blood-vessels.streamlit.app/** 
+
+HRF Database for images (**test images for the app**): https://www5.cs.fau.de/research/data/fundus-images/
+
 Screen from web app created in Flask (using trained CNN models):
 
 ![image](https://github.com/user-attachments/assets/4c5f8669-c431-4222-b9be-e6048a767987)
