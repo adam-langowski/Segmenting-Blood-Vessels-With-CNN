@@ -1,0 +1,22 @@
+name: model-vessels
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    # container: ghcr.io/iterative/cml:0-dvc2-base1
+    steps:
+      - uses: actions/checkout@v3
+      - uses: iterative/setup-cml@v1
+      - name: Train and evaluate model (vessels)
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # ML workflow
+          pip install -r requirements.txt
+          python Pipeline_HRF.py
+
+          echo "### Model metrics" > report.md
+          cat metrics.txt >> report.md
+
+          echo "Output example" >> report.md
+          cml-publish segmentation_comparison.png' --md >> report.md
