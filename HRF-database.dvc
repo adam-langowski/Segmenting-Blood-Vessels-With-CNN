@@ -1,0 +1,6 @@
+outs:
+- md5: 701697b3d40b4912fe41112fe2165a7b.dir
+  size: 111301836
+  nfiles: 135
+  hash: md5
+  path: HRF-database
